@@ -1,0 +1,49 @@
+# --- KiCad ---
+# Pliki tymczasowe i blokady
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.fp-lib-table-bak
+*.sym-lib-table-bak
+*.lck
+
+# Pliki wyjściowe i produkcyjne (zazwyczaj generowane lokalnie)
+_autosave-*
+*.log
+*.pnp
+*.rpt
+*.job
+*.gbr
+*.drl
+*.pos
+*.csv
+
+# Katalogi wyjściowe
+plots/
+gerbers/
+specctra_export.dsn
+
+# --- LTSpice ---
+# Pliki wyników symulacji (często ważą setki MB/GB)
+*.raw
+*.log
+*.fft
+
+# Pliki binarne i pomocnicze
+*.net
+*.op.raw
+*.net.txt
+
+# --- Arduino ---
+# Kompilaty i pliki tymczasowe IDE
+build/
+bin/
+obj/
+*.elf
+*.hex
+*.bin
+
+# --- Systemowe / Inne ---
+.DS_Store
+Thumbs.db
+desktop.ini
