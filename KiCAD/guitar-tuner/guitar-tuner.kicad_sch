@@ -3107,16 +3107,16 @@
 		(uuid "00d7a111-0dc5-47f4-b7cc-13271df01aad")
 	)
 	(junction
+		(at 43.18 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "019a5fa8-8325-4df4-b9e7-a6d6daaebc9b")
+	)
+	(junction
 		(at 120.65 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0b7410c9-ed89-4085-8065-b4fac3611009")
-	)
-	(junction
-		(at 163.83 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0d3db52c-5fc2-484e-aea1-0f8cde26732e")
 	)
 	(junction
 		(at 62.23 66.04)
@@ -3135,12 +3135,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "21e13ce9-31d0-4cca-9a50-ee429a003feb")
-	)
-	(junction
-		(at 43.18 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2bcff827-7d73-4935-b83a-cb2069d55fe3")
 	)
 	(junction
 		(at 214.63 39.37)
@@ -3201,6 +3195,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e705ab53-bf70-4cbb-ac12-b142361fd4a5")
+	)
+	(junction
+		(at 163.83 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed080135-73ea-4d6b-91d9-04429d346974")
 	)
 	(junction
 		(at 62.23 57.15)
@@ -3300,6 +3300,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 74.93) (xy 163.83 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b8933d3-76c9-4d3f-b562-85f92f7352f9")
+	)
+	(wire
+		(pts
 			(xy 81.28 66.04) (xy 81.28 54.61)
 		)
 		(stroke
@@ -3307,6 +3317,16 @@
 			(type default)
 		)
 		(uuid "2cd767b5-9b6c-41e5-9adf-596e75e6f831")
+	)
+	(wire
+		(pts
+			(xy 43.18 17.78) (xy 43.18 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30a8c318-393c-4965-9b6f-0d6207247d44")
 	)
 	(wire
 		(pts
@@ -3780,16 +3800,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 20.32) (xy 43.18 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eef6f7d3-0d0c-40f1-a1f0-f16802edd9d3")
-	)
-	(wire
-		(pts
 			(xy 62.23 76.2) (xy 68.58 76.2)
 		)
 		(stroke
@@ -4030,7 +4040,7 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "5V"
 		(shape input)
 		(at 29.21 43.18 90)
 		(fields_autoplaced yes)
@@ -4042,7 +4052,7 @@
 		)
 		(uuid "3dc4ad68-0d81-4cec-9fdf-e575d052aa08")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 29.21 36.3243 90)
+			(at 29.21 37.8967 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4222,9 +4232,9 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "5V"
 		(shape input)
-		(at 43.18 20.32 90)
+		(at 43.18 17.78 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4234,7 +4244,7 @@
 		)
 		(uuid "a5f3c131-de67-4dbd-b367-888f8e0c3f79")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 43.18 13.4643 90)
+			(at 43.18 12.4967 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4270,7 +4280,7 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "5V"
 		(shape input)
 		(at 77.47 30.48 180)
 		(fields_autoplaced yes)
@@ -4282,7 +4292,7 @@
 		)
 		(uuid "c46fc144-5cf3-4e60-a0bd-b6e6002d7c51")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 70.6143 30.48 0)
+			(at 72.1867 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5443,6 +5453,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 180.34 137.16 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2b9ab917-98d7-4881-9f35-e1ad22b33208")
+		(property "Reference" "R4"
+			(at 180.34 134.874 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 180.34 139.446 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 180.34 138.938 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 180.34 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5332f838-1df4-40a5-8f63-b158fff7092e")
+		)
+		(pin "2"
+			(uuid "e14cd99b-6bff-40f2-824c-769e95fdf642")
+		)
+		(instances
+			(project "guitar-tuner"
+				(path "/f7e1fae6-07c8-469d-bf0a-174fdbc69725"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 167.64 107.95 270)
 		(unit 1)
@@ -5856,6 +5945,85 @@
 				(path "/f7e1fae6-07c8-469d-bf0a-174fdbc69725"
 					(reference "U1")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 180.34 130.81 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "55924b2e-ade8-4233-b197-fe8115d7f1cf")
+		(property "Reference" "R6"
+			(at 180.34 128.524 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 180.34 133.096 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 180.34 132.588 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 180.34 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "66e60b6d-886f-4ddf-a58f-4ff349bc3dde")
+		)
+		(pin "2"
+			(uuid "325e3d37-7ba0-4869-a97b-d44bd5ed97fa")
+		)
+		(instances
+			(project "guitar-tuner"
+				(path "/f7e1fae6-07c8-469d-bf0a-174fdbc69725"
+					(reference "R6")
+					(unit 1)
 				)
 			)
 		)
@@ -6500,7 +6668,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 163.83 74.93 0)
+		(at 163.83 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6511,7 +6679,7 @@
 		(fields_autoplaced yes)
 		(uuid "75a012b6-f39d-4101-bac0-420d70f9ab0c")
 		(property "Reference" "#PWR03"
-			(at 163.83 81.28 0)
+			(at 163.83 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6522,7 +6690,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 163.83 80.01 0)
+			(at 163.83 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6532,7 +6700,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 74.93 0)
+			(at 163.83 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6543,7 +6711,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 74.93 0)
+			(at 163.83 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6554,7 +6722,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 74.93 0)
+			(at 163.83 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7357,6 +7525,85 @@
 			(project "guitar-tuner"
 				(path "/f7e1fae6-07c8-469d-bf0a-174fdbc69725"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 168.91 130.81 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ad3c437e-70b8-415e-a051-003473fd9e6d")
+		(property "Reference" "R5"
+			(at 168.91 133.096 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 168.91 128.524 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2010_5025Metric"
+			(at 168.91 129.032 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 168.91 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fa926261-146e-46c4-b6b4-18257070414b")
+		)
+		(pin "2"
+			(uuid "a1d5ac1b-033f-4868-9623-8fee3d69b4e2")
+		)
+		(instances
+			(project "guitar-tuner"
+				(path "/f7e1fae6-07c8-469d-bf0a-174fdbc69725"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -8188,6 +8435,85 @@
 			(project "guitar-tuner"
 				(path "/f7e1fae6-07c8-469d-bf0a-174fdbc69725"
 					(reference "A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 168.91 137.16 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f2a79c41-06fb-4c2d-a009-fa74c040ea8f")
+		(property "Reference" "R7"
+			(at 168.91 139.446 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 168.91 134.874 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2010_5025Metric"
+			(at 168.91 135.382 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 168.91 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6417f2fd-174d-4f86-8f0c-34c1c87fa85c")
+		)
+		(pin "2"
+			(uuid "c8c0f233-e671-410a-87f0-2bbee2f08475")
+		)
+		(instances
+			(project "guitar-tuner"
+				(path "/f7e1fae6-07c8-469d-bf0a-174fdbc69725"
+					(reference "R7")
 					(unit 1)
 				)
 			)
